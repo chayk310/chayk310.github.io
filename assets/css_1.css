@@ -37,3 +37,15 @@ a{
   h1{
     border-bottom:none;
 }
+}
+
+
+.js{
+  font-weight:bold;
+  color:blue;
+}
+
+span{
+  color:red;
+}
+
