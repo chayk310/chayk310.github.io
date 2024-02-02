@@ -13,6 +13,11 @@ ol{
   padding: 20px;
 }
 
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
 body{
   margin: 0px;
 }
