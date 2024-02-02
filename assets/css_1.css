@@ -6,8 +6,13 @@ h1{
   padding: 20px;
 }
 
-ol{
+body{
+  margin: 0px;
+}
+
+#grid ol{
   border-right: 1px solid gray;
+  width: 100px;
   margin: 0;
   padding: 20px;
 }
@@ -19,7 +24,4 @@ ol{
 
 #article{
   padding-left: 25px;
-}
-body{
-  margin: 0px;
 }
