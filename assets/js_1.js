@@ -1,4 +1,4 @@
-(function nightDayHandler(self){
+function nightDayHandler(self){
   
 		var target= document.querySelector('body');
 		var alist = document.querySelectorAll('a');
@@ -24,4 +24,4 @@
 			}
 	}
 
-})();
+}
