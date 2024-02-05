@@ -12,12 +12,14 @@ function nightDayHandler(self){
 		}
 	
 		var Body ={
-			setBackgroundColor: function(backColor){
-				document.querySelector('body').style.backgroundColor = backColor;
+			setBackgroundColor: function(color){
+				$('body').css('backgroundColor',color);
+				// document.querySelector('body').style.backgroundColor = color;
 			}
 			,
 			setColor: function(color){
-				document.querySelector('body').style.color = color;
+				$('body').css('color',color);
+				// document.querySelector('body').style.color = color;
 			}
 		}
 
