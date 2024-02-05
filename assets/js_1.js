@@ -1,5 +1,6 @@
 function nightDayHandler(self){
-		setColor(color){
+	
+		function setColor(color){
 			var alist = document.querySelectorAll('a');
 			var i=0;
 			while(i<alist.length){
@@ -7,22 +8,29 @@ function nightDayHandler(self){
 				i++;
 			}
 		}
-		setBackColor(backColor,color,value){
-			var target= document.querySelector('body');
-			
-			target.style.backgroundColor = backColor;
-			target.style.color = color;
-			self.value = value;
+	
+		function linksBackColor(backColor){
+			document.querySelector('body').style.backgroundColor = backColor;
+		}
+	
+		function linksColor(color){
+			document.querySelector('body').style.color = color;
 		}
 
+		function linksValue(value){
+			self.value = value;
+		}
 	
 		if(self.value === 'night'){
-			
-			setBackColor('black','white','day');
+			linksBackColor('black');
+			linksColor('white');
+			linksValue('day');
 			setColor('powderblue');
 			
 		}else{
-			setBackColor('white','black','night');
+			linksBackColor('white');
+			linksColor('black');
+			linksValue('night');
 			setColor('blue');
 	}
 
