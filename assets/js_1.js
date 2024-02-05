@@ -17,20 +17,17 @@ function nightDayHandler(self){
 			document.querySelector('body').style.color = color;
 		}
 
-		function linksValue(value){
-			self.value = value;
-		}
 	
 		if(self.value === 'night'){
 			linksBackColor('black');
 			linksColor('white');
-			linksValue('day');
+			self.value = 'day';
 			setColor('powderblue');
 			
 		}else{
 			linksBackColor('white');
 			linksColor('black');
-			linksValue('night');
+			self.value = 'night';
 			setColor('blue');
 	}
 
